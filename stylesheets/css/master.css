@@ -1,7 +1,7 @@
 /* MASTER CSS FILE */
 
 body{
-
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* HEADER */
@@ -9,5 +9,60 @@ body{
 header div{
   width: 100vw;
   height: 44px;
+
   background-color: #333;
 }
+
+header ul{
+  width: 1000px;
+  height: 100%;
+
+  margin: 0 auto;
+
+  /* background-color: #666; */
+}
+
+header ul li{
+  width: 10%;
+  height: 100%;
+
+  font-size: .85em;
+  font-weight: 300;
+  letter-spacing: .08em;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+
+  float: left;
+  display: inline-block;
+
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+
+/* background-color: #999; */
+}
+
+    header ul li:hover{
+      color: #B7B7B7;
+      transition: 0.3s;
+    }
+
+    /* Apple logo */
+    header ul li:first-child{
+      font-size: 1.35em;
+    }
+
+    /* Search Icon */
+    header ul li:nth-child(9){
+    background: url('https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    /* Shopping Bag icon */
+    header ul li:last-child{
+      background: url('https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
